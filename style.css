@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', 'Tahoma', 'Verdana', sans-serif;
+  background-color: #eeeeee;
+  font-size: 18px;
+}
+
+.column {
+  width: 90%;
+  max-width: 600px;
+  height: 100vh;
+  box-shadow: 0 0 10px #888888;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+
+.input {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10vh;
+  padding: 10px;
+}
+
+.input-text {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.input-button {
+  display: block;
+  width: 90px;
+  flex-shrink: 0;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.display-none {
+  display: none;
+}
+
+.messagearea {
+  padding: 10px;
+  position: relative;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.message {
+  width: 80%;
+  padding: 10px;
+  position: relative;
+  border: 1px solid #888888;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.message-robot {
+  margin-left: 20%;
+  background-color: #dddddd;
+}
+
+.robot-print {
+  text-align: right;
+  color: #888888;
+  font-style: italic;
+  animation: blink 1s ease 0s infinite alternate;
+  margin-right: 10px;
+}
+
+@keyframes blink {
+  0% {opacity: 100%;}
+  100% {opacity: 20%;}
+}
